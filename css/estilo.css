@@ -1,3 +1,30 @@
+body {
+  margin: auto;
+  font-style: Dancing Script;
+  background-color: #02010a;
+  font-family: 'Dancing Script', cursive ;
+}
+
+/*  ------------  ANIMACIÓN  -------------  */
+header {
+  /* animation-duration: 4s;
+  animation-name: slidein; */
+  animation: slidein 4s;
+}
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%
+  }
+}
+/*  -----------------------------------  */
+
+
 /*  ------------  VERSIÓN DESKTOP  -------------  */
 
 @media screen and (min-width: 900px) {
@@ -60,7 +87,6 @@
   .c2 {
     margin: 0 auto;
     text-align: center;
-    /* background-color:  #d5c75f; */
   }
   .c2 img {
     margin: 2% 2% 2% 2%;
@@ -74,7 +100,6 @@
   .c3 {
     margin: 0 auto;
     text-align: center;
-    /* background-color:  #d5c75f; */
   }
   .c3 img {
     margin: 2% 2% 2% 2%;
@@ -110,29 +135,18 @@
     box-shadow: 2px 2px 2px #02010a;
   }
   /*  -----------------------------------  */
+}
+/*  ------------  FIN VERSIÓN DESKTOP  -------------  */
 
-}
 
-header {
-  /* animation-duration: 4s;
-  animation-name: slidein; */
-  animation: slidein 4s;
-}
-@keyframes slidein {
-  0% {
-    margin-top: 150%;
-  }
-  60% {
-    margin-top: -5%;
-  }
-  100% {
-    margin-top: 0%
-  }
-}
+
 
 /*  ------------  VERSIÓN MÓVIL  -------------  */
 
 @media screen and (max-width: 899px) {
+
+  /*  ------------  HEADER  -------------  */
+
   header {
     min-width: 320px;
     margin: 0 auto;
@@ -142,15 +156,10 @@ header {
   }
   .cabecera {
     display: block;
-
-    /* flex-direction: column;
-    justify-content: center;
-    align-content: center; */
   }
   .paginas {
     display: flex;
     flex-flow: row nowrap;
-    /* align-items: center; */
     justify-content: center;
   }
   .paginas a {
@@ -163,14 +172,15 @@ header {
     color: black;
     text-decoration: underline;
   }
-  .titulo {
-    /* justify-content: center; */
-  }
   h1 {
     text-align: center;
     text-shadow: 2px 2px 0 #02010a;
     margin: 0 auto;
   }
+  /*  -----------------------------------  */
+
+  /*  -----------  CONTENIDO  -----------  */
+
   .contenido {
     min-width: 320px;
     margin: 0 auto;
@@ -190,7 +200,6 @@ header {
   .c2 {
     margin: 0 auto;
     text-align: center;
-    /* background-color:  #d5c75f; */
   }
   .c2 img {
     margin: 2% 2% 2% 2%;
@@ -204,7 +213,6 @@ header {
   .c3 {
     margin: 0 auto;
     text-align: center;
-    /* background-color:  #d5c75f; */
   }
   .c3 img {
     margin: 2% 2% 2% 2%;
@@ -218,6 +226,10 @@ header {
   img[src^='image'] {
     box-shadow: 2px 2px 2px #02010a;
   }
+  /*  -----------------------------------  */
+
+  /*  ------------  FOOTER  -------------  */
+  
   footer {
     min-width: 320px;
     height: auto;
@@ -236,94 +248,6 @@ header {
   .column1, .column2, .column3, .column4 {
     display: block;
   }
-
-
-
+  /*  -----------------------------------  */
 }
-
-
-
-
-body {
-  margin: auto;
-  font-style: Dancing Script;
-  background-color: #02010a;
-  font-family: 'Dancing Script', cursive ;
-}
-/* header {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #5b7989;
-  color: white;
-  border-radius: 10px 10px 0 0 ;
-} */
-/* .cabecera {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: flex-end;
-}
-.paginas {
-  display: flex;
-  align-items: center;
-}
-a {
-  margin-right: 1em;
-  color: white;
-  text-decoration: none;
-}
-.titulo {
-  margin-left: 1em;
-}
-h1 {
-  text-shadow: 2px 2px 0 #02010a;
-} */
-
-/* .foo {
-  width: 100%;
-}
-.column1, .column2, .column3, .column4 {
-  float: left;
-  width: 25%;
-}
-img[src^='image'] {
-  box-shadow: 2px 2px 2px #02010a;
-} */
-
-/* .c1 {
-  margin: 0;
-  background-color: #82c3a6;
-}
-.c1 img {
-  margin: 2% 2%;
-  width: 95%;;
-} */
-/* .contenido .cont {
-  display: flex;
-}
-.c2 {
-  margin: 0 auto;
-  background-color:  #d5c75f;
-}
-.c2 img {
-  margin: 2% 2% 2% 2%;
-  width: 95%;
-  border: 2px solid black ;
-}
-.c2 img:hover {
-  transform: rotate(10deg);
-  box-shadow: 5px 5px 10px #82c3a6;
-}
-.c3 {
-  margin: 0 auto;
-  background-color:  #d5c75f;
-}
-.c3 img {
-  margin: 2% 2% 2% 2%;
-  width: 95%;
-  border: 2px solid black ;
-}
-.c3 img:hover {
-  transform: translate(20px, -5px);
-  box-shadow: 5px 5px 10px #82c3a6;
-} */
+/*  ------------  FIN VERSIÓN MÓVIL  -------------  */

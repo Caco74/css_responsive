@@ -1,15 +1,36 @@
-/*  ------------  GENERAL  -------------  */
 body {
   margin: auto;
   font-style: Dancing Script;
   background-color: #02010a;
   font-family: 'Dancing Script', cursive ;
 }
-/*  ------------  FIN GENERAL  -------------  */
+
+/*  ------------  ANIMACIÓN  -------------  */
+header {
+  /* animation-duration: 4s;
+  animation-name: slidein; */
+  animation: slidein 4s;
+}
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%
+  }
+}
+/*  -----------------------------------  */
+
 
 /*  ------------  VERSIÓN DESKTOP  -------------  */
+
 @media screen and (min-width: 900px) {
+
       /*  ------------  HEADER  -------------  */
+
   header {
     max-width: 900px;
     margin: 0 auto;
@@ -45,8 +66,8 @@ body {
   }
     /*  -----------------------------------  */
 
-
     /*  -----------  CONTENIDO  -----------  */
+
   .contenido {
     max-width: 900px;
     margin: 0 auto;
@@ -89,8 +110,8 @@ body {
   }
     /*  -----------------------------------  */
 
-
     /*  ------------  FOOTER  -------------  */
+
   footer {
     max-width: 900px;
     height: auto;
@@ -112,9 +133,15 @@ body {
 }
 /*  ------------  FIN VERSIÓN DESKTOP  -------------  */
 
+
+
+
 /*  ------------  VERSIÓN MÓVIL  -------------  */
+
 @media screen and (max-width: 899px) {
+
     /*  ------------  HEADER  -------------  */
+
   header {
     min-width: 320px;
     margin: 0 auto;
@@ -145,10 +172,11 @@ body {
     text-shadow: 2px 2px 0 #02010a;
     margin: 0 auto;
   }
-    /*  ------------  FIN  -------------  */
+  /*  -----------------------------------  */
 
 
-    /*  -----------  CONTENIDO  -----------  */
+  /*  -----------  CONTENIDO  -----------  */
+
   .contenido {
     min-width: 320px;
     margin: 0 auto;+
@@ -183,10 +211,9 @@ body {
   img[src^='image'] {
     box-shadow: 2px 2px 2px #02010a;
   }
-    /*  ------------  FIN  -------------  */
+  /*  -----------------------------------  */
 
-
-    /*  ------------  FOOTER  -------------  */
+  /*  ------------  FOOTER  -------------  */
   footer {
     min-width: 320px;
     height: auto;
@@ -205,26 +232,6 @@ body {
   .column1, .column2, .column3, .column4 {
     display: block;
   }
-    /*  ------------  FIN  -------------  */
-
+  /*  -----------------------------------  */
 }
 /*  ------------  FIN VERSIÓN MÓVIL  -------------  */
-
-/*  ------------  ANIMACIÓN  -------------  */
-header {
-  /* animation-duration: 4s;
-  animation-name: slidein; */
-  animation: slidein 4s;
-}
-@keyframes slidein {
-  0% {
-    margin-top: 150%;
-  }
-  60% {
-    margin-top: -5%;
-  }
-  100% {
-    margin-top: 0%
-  }
-}
-/*  ------------  FIN ANIMACIÓN  -------------  */
